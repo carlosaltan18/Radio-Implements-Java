@@ -1,4 +1,4 @@
-package src.model; 
+package model; 
 /**
  * Interface representing a Radio with basic functionalities.
  * 

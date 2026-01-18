@@ -1,8 +1,8 @@
-package src.main;
+
 
 import java.util.Scanner;
-import src.model.Radio;
-import src.model.RadioCarToyota;
+import model.Radio;
+import model.RadioCarToyota;
 
 public class Main {
 
