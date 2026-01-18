@@ -1,4 +1,4 @@
-package model;
+package src.model;
 /**
  * Class representing a button's saved frequency and mode.
  * @author  Grupo 17
