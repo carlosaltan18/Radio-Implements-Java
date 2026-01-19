@@ -137,6 +137,11 @@ public class RadioCarToyota implements Radio {
     public String getMode() {
         return this.mode;
     }
+    
+    @Override
+    public float getFrequency(){
+        return currentFrequency;
+    }
 
     private void validateButton(int button) {
         if (button < 1 || button > NUM_BOTONES) {
