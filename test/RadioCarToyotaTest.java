@@ -17,6 +17,12 @@ public class RadioCarToyotaTest {
     }
 
     @Test
+    public void ShouldTurnOnWhenYouActionTurnOnFunction(){
+        radio.turnOn();
+        boolean result = radio.isOn();
+        assertTrue(result);
+    }
+    @Test
     public void shouldSaveAndRestoreFrequencyWithMode() {
         radio.turnOn();
 
@@ -41,4 +47,33 @@ public class RadioCarToyotaTest {
 
         assertEquals("87.9 FM", result);
     }
+
+    @Test
+    public void shouldMoveToTheHigherFrequencyAsItDecreasesFromTheLowerFrequencyAM(){
+        radio.turnOn(); 
+        radio.changeMode("AM");
+
+        radio.saveFrequency(2, 530f, "AM");
+        radio.selectFrecuency(2);
+
+        String resultAM = radio.levelDownFrequency();
+
+        assertEquals("1610 AM", resultAM);
+    }
+
+    @Test
+        public void shouldMoveToTheHigherFrequencyAsItDecreasesFromTheLowerFrequencyFM(){
+        radio.turnOn(); 
+        radio.changeMode("FM");
+
+        radio.saveFrequency(3, 87.9f, "FM");
+        radio.selectFrecuency(3);
+
+        String resultFM = radio.levelDownFrequency();
+
+        assertEquals("107.9 FM", resultFM);
+    }
+    
+
+
 }

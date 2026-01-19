@@ -24,5 +24,8 @@ public interface Radio {
 
     String getMode();
 
+    float getFrequency();
+
+
 
 }
