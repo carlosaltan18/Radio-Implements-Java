@@ -37,6 +37,7 @@ public class RadioCarToyota implements Radio {
     @Override
     public void turnOff() {
         this.on = false;
+        
     }
 
     @Override
@@ -135,6 +136,11 @@ public class RadioCarToyota implements Radio {
     @Override
     public String getMode() {
         return this.mode;
+    }
+    
+    @Override
+    public float getFrequency(){
+        return currentFrequency;
     }
 
     private void validateButton(int button) {
