@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import model.Radio;
 import model.RadioCarToyota;
-
+import model.RadioCar;
+import model.MyRadio; 
 /**
  * Class implementing a Main operation of the program
  * 
@@ -15,6 +16,8 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         Radio radio = new RadioCarToyota();
+        //Radio radio = new RadioCar();
+        //Radio radio = new MyRadio();
         int stateRadio = 0;
         int option = 0;
 
