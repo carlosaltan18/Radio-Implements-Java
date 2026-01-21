@@ -4,18 +4,19 @@ import model.RadioCarToyota;
 import model.RadioCar;
 import model.MyRadio; 
 /**
+/**
  * Class implementing a Main operation of the program
  * 
  * @author Grupo 17
  * 
  */
 
-public class Main {
+public class Main2 {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Radio radio = new RadioCarToyota();
+        Radio radio = new RadioCar();
         int stateRadio = 0;
         int option = 0;
 
